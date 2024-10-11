@@ -1,0 +1,80 @@
+
+nav{
+    background-color: orange;
+    padding: 30px;
+}
+a.navbar-brand{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+nav ul li{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+section#hero{
+    background-color: beige;
+    padding: 20px;
+}
+section#hero div.food{
+    text-align: center;
+    margin-bottom: 30px;
+}
+section#hero div.food img{
+    height: 200px;
+}
+section#hero div.food h3{
+    font-weight: 600;
+    color: orange;
+    padding-top: 10px;
+}
+section#hero div.food span{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+section#hero div.food p{
+    font-size: 16px;
+}
+section#hero div.food button.add-to-cart-btn{
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+section#hero div.cart{
+    height: 190vh;
+}
+section#hero div.cart h3{
+    text-align: center;
+    color: orange;
+    padding: 20px;
+}
+section#hero div.cart button{
+    padding: 5px;
+    margin: 20px;
+    background-color: orange;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
+}
+div#display-order{
+    padding: 20px;
+}
+
+@media (max-width: 576px){
+    section#hero div#cart-side{
+        height: 100px;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+    
+}

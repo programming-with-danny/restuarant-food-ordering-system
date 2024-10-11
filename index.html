@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpicySpot Restuarant</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg p-2 p-lg-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">SpicySpot</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>  
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Drinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Swallow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cereal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pasta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="hero" class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-md-col-6 col-lg-6">
+                                <div class="food shadow">
+                                    <div>
+                                        <img src="images/chicken.png" alt="" class="img-fluid">
+                                    </div>
+                                    <h3 id="fried-chicken">Fried Chicken</h3><span class="price">N5000</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="add-to-cart-btn" data-name="Fried Chicken" data-price="5000" data-description="Lorem ipsum, dolor sit amet consectetur adipisicing elit." onclick="moveToCart(this)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-col-6 col-lg-6">
+                                <div class="food shadow">
+                                    <div>
+                                        <img src="images/foodimage.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <h3>Meat and Chips</h3><span>N2500</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="add-to-cart-btn" data-name="Meat and Chips" data-price="2500" data-description="Lorem ipsum, dolor sit amet consectetur adipisicing elit." onclick="moveToCart(this)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-col-6 col-lg-6">
+                                <div class="food shadow">
+                                    <div>
+                                        <img src="images/foodimage2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <h3>Fried Beef</h3><span>N3000</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="add-to-cart-btn" data-name="Fried Beef" data-price="3000" data-description="Lorem ipsum, dolor sit amet consectetur adipisicing elit." onclick="moveToCart(this)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-col-6 col-lg-6">
+                                <div class="food shadow">
+                                    <div>
+                                        <img src="images/food.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <h3>Meat</h3><span>N1500</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="add-to-cart-btn" data-name="Meat" data-price="1500" data-description="Lorem ipsum, dolor sit amet consectetur adipisicing elit." onclick="moveToCart(this)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-col-6 col-lg-6">
+                                <div class="food shadow">
+                                    <div>
+                                        <img src="images/foodimage3.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                    <h3>Burger</h3><span>N2500</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="add-to-cart-btn" data-name="Burger" data-price="2500" data-description="Lorem ipsum, dolor sit amet consectetur adipisicing elit." onclick="moveToCart(this)">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-col-6 col-lg-6">
+                                <div class="food shadow">
+                                    <div>
+                                        <img src="images/food4.png" alt="" class="img-fluid">
+                                    </div>
+                                    <h3>Egusi Soup</h3><span>N3500</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="add-to-cart-btn" data-name="Egusi Soup" data-price="3500" data-description="Lorem ipsum, dolor sit amet consectetur adipisicing elit." onclick="moveToCart(this)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4" id="cart-side">
+                        <div class="cart shadow">
+                            <h3>Order Checkout</h3>
+                            <div id="display-order">
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-6 offset-3">
+                                    <div>
+                                        <button id="place-order-btn">Place Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/dom.js"></script>
+    </body>
+</html>
